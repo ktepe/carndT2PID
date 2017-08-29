@@ -1,7 +1,39 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+## Kemal Tepe, ketepe@gmail.com
+
 ---
+## Manual Parameter tuning:
+
+1-Adjust Kp such that the car stays on the road until it gets as close as possible to the entrance of the bridge and oscilates (goes side to side) while moving.
+
+2- Pick Kd as 10 times arger than Kp as initial value and increase or decrease it until the car's oscilation dampens but it tracks a relatively steady track.
+
+3- Adjust Ki as 10 times smaller than Kp as inital value and adjust it to reduce CTE value as much as possible.
+
+When the car drives steadily, re-adjust Kp, Ki, and Kd to provide a sharper turns at the steep curves (especially entering and exiting bridge).
+
+With these, I have concluded that Kp=0.1, Ki=0.001, Kd=0.5 provided enough stability to run the car in the entire track. 
+
+However, when the car speed increased to higher speeds 50 mph, then Kp=0.08, Ki=0.005 and Kd=0.5 worked better.
+
+Also a small adjustments made to the trootle value to reduce the speed when CTE increases and adjust the trootle to keep the car at the target speeds.
+
+
+```C
+double trottle_value= -0.01*(speed-target_speed)-0.02*(fabs(cte));
+```
+
+With these, the car completes the track without leaving the drivable portion. With trottle adjustment it is more stable.
+
+
+
+
+
+
+
+
 
 ## Dependencies
 
