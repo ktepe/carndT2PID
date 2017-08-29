@@ -67,16 +67,17 @@ int main()
           if (steer_value <= -1.0) steer_value=-1.0;
           
 					//double trottle_value=0.2;
-					double target_speed=80.0;
+					double target_speed=90.0;
 					
-					double trottle_value= -0.01*(speed-target_speed)-0.01*(fabs(cte));
+					double trottle_value= -0.01*(speed-target_speed)-0.02*(fabs(cte));
     
+    			//trottle_value=0.3;
+    			
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
-          //msgJson["throttle"] = 0.3;
           msgJson["throttle"] = trottle_value;
           
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";

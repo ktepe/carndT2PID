@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/ket/mypy/carnd/term2/CarND-PID-Control-Project/src/PID.cpp
+/home/ket/mypy/carnd/term2/carndT2PID/src/PID.cpp
 iostream
 -
 PID.h
-/home/ket/mypy/carnd/term2/CarND-PID-Control-Project/src/PID.h
+/home/ket/mypy/carnd/term2/carndT2PID/src/PID.h
 
-/home/ket/mypy/carnd/term2/CarND-PID-Control-Project/src/PID.h
+/home/ket/mypy/carnd/term2/carndT2PID/src/PID.h
 
-/home/ket/mypy/carnd/term2/CarND-PID-Control-Project/src/json.hpp
+/home/ket/mypy/carnd/term2/carndT2PID/src/json.hpp
 algorithm
 -
 array
@@ -70,15 +70,15 @@ utility
 vector
 -
 
-/home/ket/mypy/carnd/term2/CarND-PID-Control-Project/src/main.cpp
+/home/ket/mypy/carnd/term2/carndT2PID/src/main.cpp
 uWS/uWS.h
 -
 iostream
 -
 json.hpp
-/home/ket/mypy/carnd/term2/CarND-PID-Control-Project/src/json.hpp
+/home/ket/mypy/carnd/term2/carndT2PID/src/json.hpp
 PID.h
-/home/ket/mypy/carnd/term2/CarND-PID-Control-Project/src/PID.h
+/home/ket/mypy/carnd/term2/carndT2PID/src/PID.h
 math.h
 -
 
